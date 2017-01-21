@@ -6,20 +6,26 @@ using System.Web;
 
 namespace Movies.Entities
 {
-    public class MoviesSeries
+    public class Episode
     {
-
-        [Key]  
+            
+        [Key]
         public int Id;
 
         [Required]
-        public String Title;
+        public string ImdbId;
 
         [Required]
-        public String ImdbId;
+        public string EpisodeTitle;
 
         [Required]
-        public String Type;
+        public int SeasonNumber;
+
+        [Required]
+        public int EpisodeNumber;
+
+        [Required]
+        public MovieSerie Serie;
 
     }
 }

@@ -14,7 +14,7 @@ namespace Movies.Entities
         public string ImdbId;
 
         [Required]
-        public MoviesSeries MovieSerie;
+        public MovieSerie MovieSerie;
 
         [Required]
         public IdentityUser User;

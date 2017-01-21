@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Movies.Entities
 {
-    public class CheckMoviesSeries
+    public class MovieSerie
     {
-        [Key]
+
+        [Key]  
         public int Id;
 
         [Required]
-        public MovieSerie MovieSerie;
+        public String Title;
 
         [Required]
-        public IdentityUser User;
+        public String ImdbId;
 
         [Required]
-        public DateTime Date;
+        public String Type;
 
     }
 }

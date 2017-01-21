@@ -8,8 +8,9 @@ using System.Web.Http;
 
 namespace Movies.OmdbAPI
 {
+    [Authorize]
     public class MoviesSeriesController : ApiController
-    {
+    { 
         [Route("omdbapi/moviesseries/{Title}")] 
         public  IHttpActionResult Get(string Title)
         {

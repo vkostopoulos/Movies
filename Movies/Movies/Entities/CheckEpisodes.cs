@@ -14,7 +14,7 @@ namespace Movies.Entities
         public int Id;
 
         [Required]
-        public Episodes Episode;
+        public Episode Episode;
 
         [Required]
         public DateTime Date;

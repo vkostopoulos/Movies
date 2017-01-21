@@ -14,10 +14,10 @@ namespace Movies.Models
                 Database.SetInitializer<MoviesDb>(new DropCreateDatabaseIfModelChanges<MoviesDb>());
             }
 
-            public DbSet<MoviesSeries> MoviesSeries { get; set; }
+            public DbSet<MovieSerie> MoviesSeries { get; set; }
             public DbSet<CheckEpisodes> CheckEpisodes { get; set; }
             public DbSet<CheckMoviesSeries> CheckMoviesSeries { get; set; }
-            public DbSet<Episodes> Episodes { get; set; }
+            public DbSet<Episode> Episodes { get; set; }
             public DbSet<Share> Share { get; set; }
 
     }

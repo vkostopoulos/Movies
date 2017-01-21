@@ -6,6 +6,7 @@ using System.Web.Http;
 
 namespace Movies.OmdbAPI
 {
+    [Authorize]
     public class SeasonsController : ApiController
     {
         [Route("omdbapi/moviesseries/{ImdbId}/Season/{SeasonNo}")]

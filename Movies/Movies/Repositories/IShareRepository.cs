@@ -6,11 +6,11 @@ using Movies.Entities;
 
 namespace Movies.Repositories
 {
-    public class IShare
+    public class IShareRepository
     {
         public List<Share> GetAll { get; set; }
 
-        public List<Share> GetFormMe { get; set; }
+        public List<Share> GetForMe { get; set; }
 
     }
 }
